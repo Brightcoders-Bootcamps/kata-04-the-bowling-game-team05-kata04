@@ -1,5 +1,5 @@
 
-#
+
 class Scoreboard
     attr_accessor :scores
     
