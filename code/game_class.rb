@@ -2,14 +2,12 @@ require_relative 'player_class'
 require_relative 'scoreboard_class.rb'
 require_relative 'bonus_class.rb'
 
-class BowlingGame
-    attr_accessor :scoreboard
+class Game
+    attr_accessor :scoreboard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     
     def initialize(playerName)
-        @player = Player.new(playerName)
-        @score = 0
+        @player = Player.new(playerName) 
         @scoreboard = Scoreboard.new
-        @bonus = Bonus.new
     end
 
     def roll_dice
