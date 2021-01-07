@@ -13,8 +13,8 @@ class Game
     def roll_dice
         for frame in(0..9)
             for roll in(0..1)
-                @scoreboard.scores[frame][roll] = @player.roll(11) if roll == 0
-                @scoreboard.scores[frame][roll] = @player.roll(11 - @scoreboard.scores[frame][0]) if roll == 1
+                roll == 0 ? @scoreboard.scores[frame][roll] = @player.roll(11) : @scoreboard.scores[frame][roll] = @player.roll(11 - @scoreboard.scores[frame][0]) 
+           
             end
         end
     end

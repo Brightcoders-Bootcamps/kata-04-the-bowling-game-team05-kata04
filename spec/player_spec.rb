@@ -10,7 +10,7 @@ RSpec.describe Player do
 
     describe '.roll' do
         it 'return the number rest pins' do
-            expect(@player.roll(8)).to be_between(0,7)
+            expect(@player.roll(11)).to be_between(0,10)
         end
     end
 end
