@@ -17,9 +17,13 @@ class Game
   def roll_dice
     (0..9).each do |frame|
       (0..1).each do |roll|
-        @scoreboard.scores[frame][roll] = if roll.zero ? @player.roll(11) : @player.roll(11 - @scoreboard.scores[frame][0])
+        @scoreboard.scores[frame][roll] = if roll.zero?
+                                            @player.roll(11)
+                                          else
+                                            @player.roll(11 - @scoreboard.scores[frame][0])
+                                          end
       end
     end
   end
-
+  
 end

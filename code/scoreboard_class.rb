@@ -1,5 +1,6 @@
-require_relative 'bonus_class'
 # frozen_string_literal: true
+
+require_relative 'bonus_class'
 # scan array and print's it
 class Scoreboard
   attr_accessor :scores
