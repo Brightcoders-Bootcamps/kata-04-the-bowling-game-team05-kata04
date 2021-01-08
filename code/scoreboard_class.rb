@@ -23,6 +23,7 @@ class Scoreboard
                 t2 = @scores[frame][roll]if roll==1
             end
             printdata(frame,t1,t2) 
+            
         end
     end
 

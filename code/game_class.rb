@@ -3,8 +3,7 @@ require_relative 'scoreboard_class.rb'
 require_relative 'bonus_class.rb'
 
 class Game
-    attr_accessor :scoreboard                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-    
+    attr_accessor :scoreboard                                                                                                                                                                                                                  
     def initialize(playerName)
         @player = Player.new(playerName) 
         @scoreboard = Scoreboard.new

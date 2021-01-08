@@ -11,7 +11,7 @@ class Bonus
         if frame == 9 and t1 + t2 == 10
             bonus_roll(frame)
         end
-                                                                                                      
+                      
         if t1 == 10 and frame < 9
             return @total_score+=strike(frame)
         end
